@@ -32,10 +32,10 @@ syn case ignore
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" }}}
 " Base constructs {{{
 syn match dhcpdString +"[^"]*"+
-syn match dhcpdDecNumber "\<-\?\d\+\(;\|\s\|$\)"
-syn match dhcpdIPv4 "\<\(\d\{1,3}\.\)\{3}\d\{1,3}\(;\|\s\|$\)"
-syn match dhcpdMAC "\<\(\x\x\?:\)\{5}\x\x\?\(;\|\s\|$\)"
-syn match dhcpdDate "\<[0-6]\s\d\{4}/\d\d/\d\d/\s\d\d:\d\d:\d\d\(;\|\s\|$\)"
+syn match dhcpdDecNumber "\<-\?\d\+\(,\|;\|\s\|$\)"
+syn match dhcpdIPv4 "\<\(\d\{1,3}\.\)\{3}\d\{1,3}\(,\|;\|\s\|$\)"
+syn match dhcpdMAC "\<\(\x\x\?:\)\{5}\x\x\?\(,\|;\|\s\|$\)"
+syn match dhcpdDate "\<[0-6]\s\d\{4}/\d\d/\d\d/\s\d\d:\d\d:\d\d\(,\|;\|\s\|$\)"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" }}}
 " Keywords {{{
 syn keyword dhcpdGroupDecl group shared-network subnet host pool failover
